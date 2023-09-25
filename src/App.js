@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+const express = require('express');
+const bodyParser = require('body-parser');
+const app = express();
+const port = 3000;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Clout</h1>
+      {/* Add more JSX for your application */}
     </div>
   );
 }
+
+
+// Middleware
+app.use(bodyParser.json());
+
+
+
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
+});
+
 
 export default App;
