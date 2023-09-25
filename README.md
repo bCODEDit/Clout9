@@ -4,9 +4,9 @@ Final project for SD program
 3. Technology Stack:
 - Front End: HTML, CSS, JavaScript
 - Back End: Node.js with Express
-- Database: NoSQL
+- Database: Firebase
 - Source Control: Git
-- Hosting: Heroku
+- Hosting: Firebase
 
 4. Initial Features and User Stories:
 - Feature 1: User Registration and Login
